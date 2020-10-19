@@ -1,0 +1,26 @@
+<h4>Editar Postagen</h4>
+
+<div class="card">
+    <div class="card-body">
+        <form action="/admin/postagen/edit" method="post">
+                <input type="hidden" name="id" value="{{postagen._id}}">
+            <label for="titulo_l">Título</label> 
+                <input type="text" name="titulo" id="titulo_l" value="{{postagen.titulo}}" class="form-control">
+            <label for="slug_l">Slug</label> 
+                <input type="text" name="slug" id="slug_l" value="{{postagen.slug}}" class="form-control">
+            <label for="descricao_l">Descrição</label>
+                <input type="text" name="descricao" id="descricao_l" value="{{postagen.descricao}}" class="form-control">
+            <label for="conteudo_l">Conteúdo</label>
+                <textarea name="conteudo" id="conteudo_l" class="form-control">{{postagen.conteudo}}</textarea>
+            <label for="categoria_l">Categorias</label>
+                <select name="categoria" id="categoria_l"     class="custom-select">
+                    {{#each categorias}}
+                    <option value="{{_id}}">{{nome}}</option>
+                    {{else}}
+                    <option value="0">Nenhuma Categoria       Registrada</option>
+                    {{/each}}
+                </select>
+            <button type="submit" class="btn btn-success mt-2">editar Postagen</button>
+        </form>
+    </div>
+</div>
