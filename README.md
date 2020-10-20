@@ -15,5 +15,5 @@ Ferramentas utilizadas:
 
 Acesse:
 * Resultado do projeto: [blog do node](https://safe-gorge-65185.herokuapp.com/)
-* Canal: [Victor Lima - Guia do Programador](https://www.youtube.com/channel/UC_issB-37g9lwfAA37fy2Tg)
+* Canal do curso: [Victor Lima - Guia do Programador](https://www.youtube.com/channel/UC_issB-37g9lwfAA37fy2Tg)
  
